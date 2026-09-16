@@ -59,6 +59,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
 
     text-decoration: none;
 
@@ -69,7 +70,7 @@ table {
 }
 
 .categoria:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 
@@ -88,7 +89,7 @@ td {
 }
 
 .contenido {
-    color: #950aeb;
+    color: #9f14f5;
 }
 
 .voz {
@@ -96,5 +97,5 @@ td {
 }
 
 .multimedia {
-    color: #950aeb;
+    color: #9f14f5;
 }
