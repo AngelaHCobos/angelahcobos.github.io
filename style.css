@@ -54,7 +54,7 @@ table {
 ========================= */
 
 .categoria {
-    min-height: 150px;
+    min-height: 100px;
 
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@ table {
 }
 
 .categoria:hover {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
 }
 
 
@@ -88,7 +88,7 @@ td {
 }
 
 .contenido {
-    color: #af3bf7;
+    color: #950aeb;
 }
 
 .voz {
@@ -96,5 +96,5 @@ td {
 }
 
 .multimedia {
-    color: #af3bf7;
+    color: #950aeb;
 }
