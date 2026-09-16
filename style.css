@@ -1,15 +1,28 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Andada Pro", serif;
     background-color: #f5f5f5;
     color: #222;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
+/* =========================
+   PORTADA
+========================= */
 
 .portada {
     width: 100%;
@@ -18,12 +31,48 @@ img {
     display: block;
 }
 
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categorias {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   TABLA
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    table-layout: fixed;
+}
+
+
+/* =========================
+   BOTONES / CATEGORÍAS
+========================= */
+
 .categoria {
-    min-height: 180px;
+    min-height: 150px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 20px;
 
     text-decoration: none;
     color: #222;
@@ -39,4 +88,16 @@ img {
 
 .categoria:hover {
     transform: translateY(-5px);
+}
+
+
+/* =========================
+   DESCRIPCIONES
+========================= */
+
+td {
+    padding: 10px;
+    vertical-align: top;
+    line-height: 1.5;
+    font-size: 15px;
 }
