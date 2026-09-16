@@ -2,10 +2,6 @@
    CONFIGURACIÓN GENERAL
 ========================= */
 
-* {
-    box-sizing: border-box;
-}
-
 html,
 body {
     margin: 0;
@@ -15,7 +11,6 @@ body {
 
 body {
     font-family: "Andada Pro", serif;
-    background-color: #f5f5f5;
     color: #32024F;
 }
 
@@ -40,14 +35,8 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
-    text-align: left;
+    text-align: center;
 }
-
-.categorias h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
 
 /* =========================
    TABLA
@@ -75,7 +64,6 @@ table {
     padding: 20px;
 
     text-decoration: none;
-    color: #32024F;
 
     font-size: 22px;
     font-weight: bold;
