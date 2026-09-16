@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -9,4 +16,27 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.categoria {
+    min-height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #222;
+
+    background-color: white;
+    border: 1px solid #222;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
 }
