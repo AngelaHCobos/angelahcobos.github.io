@@ -44,8 +44,7 @@ body {
 
 table {
     width: 100%;
-    /*border-collapse: separate;*/
-    border-spacing: 15px;
+    border-spacing: 5px;
     table-layout: fixed;
 }
 
@@ -61,8 +60,6 @@ table {
     align-items: center;
     justify-content: center;
 
-    padding: 20px;
-
     text-decoration: none;
 
     font-size: 22px;
@@ -72,7 +69,7 @@ table {
 }
 
 .categoria:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 
@@ -91,7 +88,7 @@ td {
 }
 
 .contenido {
-    color: #E7C3FD;
+    color: #af3bf7;
 }
 
 .voz {
@@ -99,5 +96,5 @@ td {
 }
 
 .multimedia {
-    color: #E7C3FD;
+    color: #af3bf7;
 }
