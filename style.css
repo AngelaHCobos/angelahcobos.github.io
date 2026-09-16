@@ -16,7 +16,7 @@ body {
 body {
     font-family: "Andada Pro", serif;
     background-color: #f5f5f5;
-    color: #222;
+    color: #32024F;
 }
 
 
@@ -40,7 +40,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
-    text-align: center;
+    text-align: left;
 }
 
 .categorias h2 {
@@ -75,10 +75,7 @@ table {
     padding: 20px;
 
     text-decoration: none;
-    color: #222;
-
-    background-color: white;
-    border: 1px solid #222;
+    color: #32024F;
 
     font-size: 22px;
     font-weight: bold;
@@ -96,8 +93,23 @@ table {
 ========================= */
 
 td {
-    padding: 10px;
     vertical-align: top;
     line-height: 1.5;
     font-size: 15px;
+}
+
+.video {
+    color: #32024F;
+}
+
+.contenido {
+    color: #E7C3FD;
+}
+
+.voz {
+    color: #32024F;
+}
+
+.multimedia {
+    color: #E7C3FD;
 }
