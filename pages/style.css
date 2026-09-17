@@ -245,6 +245,36 @@ td {
     margin: 30px 0;
 }
 
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 400px;
+    margin: 20px 0 50px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.contacto-item img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.contacto-item:hover {
+    color: var(--color-claro);
+    transform: translateX(8px);
+}
+
 
 /* =========================
    UTILIDADES
