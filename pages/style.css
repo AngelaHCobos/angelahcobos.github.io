@@ -89,8 +89,15 @@ td {
 
 
 /* =========================
-   ENCABEZADO (GATITO + AHC)
+   ENCABEZADO (GATITO + AHC + NAV)
 ========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .logo-menu {
     width: auto;
@@ -127,7 +134,7 @@ td {
 .nav-menu {
     width: auto;
     table-layout: auto;
-    margin: 20px 20px 10px auto;
+    margin: 20px 20px 10px 0;
 }
 
 .botones a {
