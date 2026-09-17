@@ -73,7 +73,6 @@ table {
     transform: translateY(-5px);
 }
 
-
 /* =========================
    DESCRIPCIONES
 ========================= */
@@ -84,24 +83,12 @@ td {
     font-size: 15px;
 }
 
-.video {
+.letra-oscura {
     color: #32024F;
 }
 
-.contenido {
+.letra-clara {
     color: #9f14f5;
-}
-
-.voz {
-    color: #32024F;
-}
-
-.multimedia {
-    color: #9f14f5;
-}
-
-.sobre-mi {
-    color: #32024F;
 }
 
 /* =========================
@@ -109,11 +96,20 @@ td {
 ========================= */
 .botones {}
 
+.botones:hover {
+    transform: translateY(-5px);
+}
+
+.gatito {
+    margin: 50px auto;
+    text-align: left;
+}
+
 /* =========================
-   BOTONES DE VIDEOS
+   BOTONES DE LAS PAGINAS
 ========================= */
 
-.video-link img {
+.boton-link img {
     display: block;
     transition: 0.2s;
     width: 90%;
@@ -122,7 +118,14 @@ td {
     text-align: center;
 }
 
-.video-link img:hover {
+.boton-link img:hover {
     transform: scale(1.03);
     opacity: 0.85;
+}
+
+/* =========================
+   TEXTO A LA DERECHA
+========================= */
+.texto-derecha {
+    text-align: right;
 }
