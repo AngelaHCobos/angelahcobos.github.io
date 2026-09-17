@@ -99,3 +99,21 @@ td {
 .multimedia {
     color: #9f14f5;
 }
+
+/* =========================
+   BOTONES DE VIDEOS
+========================= */
+
+.video-link img {
+    display: block;
+    transition: 0.2s;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.video-link img:hover {
+    transform: scale(1.03);
+    opacity: 0.85;
+}
