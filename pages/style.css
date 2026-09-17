@@ -34,6 +34,12 @@ table {
     table-layout: fixed;
 }
 
+main {
+    display: block;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+
 td {
     vertical-align: top;
     line-height: 1.5;
@@ -97,12 +103,14 @@ td {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 6%;
+    box-sizing: border-box;
 }
 
 .logo-menu {
     width: auto;
     table-layout: auto;
-    margin: 20px 0 10px 20px;
+    margin: 20px 0 10px 0;
 }
 
 .gatito {
@@ -134,7 +142,7 @@ td {
 .nav-menu {
     width: auto;
     table-layout: auto;
-    margin: 20px 20px 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 .botones a {
