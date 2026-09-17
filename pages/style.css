@@ -1,4 +1,15 @@
 /* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --color-oscuro: #32024F;
+    --color-claro: #9f14f5;
+    --transition: 0.2s;
+}
+
+
+/* =========================
    CONFIGURACIÓN GENERAL
 ========================= */
 
@@ -14,12 +25,32 @@ body {
 }
 
 body {
-    color: #32024F;
+    color: var(--color-oscuro);
+}
+
+table {
+    width: 100%;
+    border-spacing: 5px;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.letra-oscura {
+    color: var(--color-oscuro);
+}
+
+.letra-clara {
+    color: var(--color-claro);
 }
 
 
 /* =========================
-   PORTADA
+   PORTADA (INDEX)
 ========================= */
 
 .portada {
@@ -29,32 +60,12 @@ body {
     display: block;
 }
 
-
-/* =========================
-   CATEGORÍAS
-========================= */
-
 .categorias {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
     text-align: center;
 }
-
-/* =========================
-   TABLA
-========================= */
-
-table {
-    width: 100%;
-    border-spacing: 5px;
-    table-layout: fixed;
-}
-
-
-/* =========================
-   BOTONES / CATEGORÍAS
-========================= */
 
 .categoria {
     min-height: 100px;
@@ -69,33 +80,16 @@ table {
     font-size: 22px;
     font-weight: bold;
 
-    transition: 0.2s;
+    transition: var(--transition);
 }
 
 .categoria:hover {
     transform: translateY(-5px);
 }
 
-/* =========================
-   DESCRIPCIONES
-========================= */
-
-td {
-    vertical-align: top;
-    line-height: 1.5;
-    font-size: 15px;
-}
-
-.letra-oscura {
-    color: #32024F;
-}
-
-.letra-clara {
-    color: #9f14f5;
-}
 
 /* =========================
-   ENCABEZADO (LOGO + GATITO)
+   ENCABEZADO (GATITO + AHC)
 ========================= */
 
 .logo-menu {
@@ -116,14 +110,15 @@ td {
     padding-left: 10px;
     font-size: 22px;
     font-weight: bold;
-    color: #32024F;
+    color: var(--color-oscuro);
     text-decoration: none;
-    transition: 0.2s;
+    transition: var(--transition);
 }
 
 .boton-atras:hover {
-    color: #9f14f5;
+    color: var(--color-claro);
 }
+
 
 /* =========================
    BOTONES DE NAVEGACIÓN
@@ -140,7 +135,7 @@ td {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #9f14f5;
+    background-color: var(--color-claro);
     color: #ffffff;
     text-decoration: none;
     border-radius: 30px;
@@ -148,11 +143,11 @@ td {
     font-size: 14px;
     letter-spacing: 0.5px;
     white-space: nowrap;
-    transition: 0.2s;
+    transition: var(--transition);
 }
 
 .botones a:hover {
-    background-color: #32024F;
+    background-color: var(--color-oscuro);
     transform: translateY(-3px);
 }
 
@@ -162,13 +157,14 @@ td {
     filter: brightness(0) invert(1);
 }
 
+
 /* =========================
-   BOTONES DE LAS PAGINAS
+   GALERÍA DE CADA PÁGINA
 ========================= */
 
 .boton-link img {
     display: block;
-    transition: 0.2s;
+    transition: var(--transition);
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
@@ -180,10 +176,24 @@ td {
     opacity: 0.85;
 }
 
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-oscuro);
+}
+
+
 /* =========================
-   TEXTO A LA DERECHA
+   UTILIDADES
 ========================= */
+
 .texto-derecha {
     text-align: right;
     margin-right: auto;
+}
+
+.firma {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-claro);
 }
