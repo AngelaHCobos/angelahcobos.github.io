@@ -235,6 +235,10 @@ td {
     min-width: 280px;
 }
 
+.texto-sobre-mi h2:not(.firma) {
+    font-weight: 400;
+}
+
 .foto-perfil {
     display: block;
     flex-shrink: 0;
