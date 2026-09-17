@@ -110,6 +110,7 @@ td {
 .logo-menu {
     width: auto;
     table-layout: auto;
+    border-spacing: 15px 5px;
     margin: 20px 0 10px 0;
 }
 
@@ -142,6 +143,7 @@ td {
 .nav-menu {
     width: auto;
     table-layout: auto;
+    border-spacing: 12px 5px;
     margin: 20px 0 10px 0;
 }
 
@@ -177,24 +179,41 @@ td {
    GALERÍA DE CADA PÁGINA
 ========================= */
 
-.boton-link img {
-    display: block;
-    transition: var(--transition);
-    width: 90%;
-    max-width: 1200px;
-    margin: 50px auto;
-    text-align: center;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
 }
 
-.boton-link img:hover {
-    transform: scale(1.03);
+.tarjeta {
+    display: block;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.tarjeta:hover img {
     opacity: 0.85;
 }
 
-.titulo {
-    text-align: center;
+.tarjeta-titulo {
+    display: block;
+    margin-top: 12px;
     font-weight: bold;
-    color: var(--color-oscuro);
+    font-size: 15px;
 }
 
 
