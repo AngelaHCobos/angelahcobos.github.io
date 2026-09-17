@@ -95,27 +95,71 @@ td {
 }
 
 /* =========================
-   BOTONES DE ARRIBA
+   ENCABEZADO (LOGO + GATITO)
+========================= */
+
+.logo-menu {
+    width: auto;
+    table-layout: auto;
+    margin: 20px 0 10px 20px;
+}
+
+.gatito {
+    height: 45px;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+
+.boton-atras {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #32024F;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.boton-atras:hover {
+    color: #9f14f5;
+}
+
+/* =========================
+   BOTONES DE NAVEGACIÓN
 ========================= */
 
 .nav-menu {
     width: auto;
     table-layout: auto;
-    margin-left: auto;
-    margin-right: 0;
+    margin: 20px 20px 10px auto;
 }
 
-.botones {
-    padding: 0 15px;
+.botones a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #9f14f5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: 0.2s;
 }
 
-.botones:hover {
-    transform: translateY(-5px);
+.botones a:hover {
+    background-color: #32024F;
+    transform: translateY(-3px);
 }
 
-.gatito {
-    margin: 50px auto;
-    text-align: left;
+.botones img.boton {
+    height: 18px;
+    width: 18px;
+    filter: brightness(0) invert(1);
 }
 
 /* =========================
