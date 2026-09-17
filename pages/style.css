@@ -219,6 +219,34 @@ td {
 
 
 /* =========================
+   SOBRE MÍ (INTRO)
+========================= */
+
+.intro-sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto-sobre-mi {
+    flex: 1;
+    min-width: 280px;
+}
+
+.foto-perfil {
+    display: block;
+    flex-shrink: 0;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+
+/* =========================
    UTILIDADES
 ========================= */
 
@@ -233,13 +261,4 @@ td {
     font-style: italic;
     text-align: center;
     color: var(--color-claro);
-}
-
-.foto-perfil {
-    display: block;
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 30px auto;
 }
