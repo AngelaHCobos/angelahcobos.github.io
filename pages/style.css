@@ -214,6 +214,7 @@ td {
     margin-top: 12px;
     font-weight: bold;
     font-size: 15px;
+    text-align: center;
 }
 
 
@@ -227,7 +228,18 @@ td {
 }
 
 .firma {
-    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 600;
     font-style: italic;
+    text-align: center;
     color: var(--color-claro);
+}
+
+.foto-perfil {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px auto;
 }
