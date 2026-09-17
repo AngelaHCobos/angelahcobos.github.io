@@ -2,6 +2,10 @@
    CONFIGURACIÓN GENERAL
 ========================= */
 
+* {
+    font-family: "Hepta Slab", serif;
+}
+
 html,
 body {
     margin: 0;
@@ -10,7 +14,6 @@ body {
 }
 
 body {
-    font-family: "Hepta Slab", serif;
     color: #32024F;
 }
 
@@ -94,7 +97,17 @@ td {
 /* =========================
    BOTONES DE ARRIBA
 ========================= */
-.botones {}
+
+.nav-menu {
+    width: auto;
+    table-layout: auto;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.botones {
+    padding: 0 15px;
+}
 
 .botones:hover {
     transform: translateY(-5px);
@@ -128,4 +141,5 @@ td {
 ========================= */
 .texto-derecha {
     text-align: right;
+    margin-right: auto;
 }
