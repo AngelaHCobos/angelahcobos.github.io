@@ -290,8 +290,16 @@ td {
 ========================= */
 
 .texto-derecha {
-    text-align: right;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.icono {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .firma {
