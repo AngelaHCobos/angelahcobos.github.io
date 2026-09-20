@@ -289,6 +289,29 @@ td {
    UTILIDADES
 ========================= */
 
+.encabezado-pagina {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.titulo-pagina {
+    flex: 1;
+    min-width: 280px;
+    max-width: 520px;
+}
+
+.titulo-pagina h2 {
+    text-align: justify;
+}
+
+.titulo-pagina h1,
+.herramientas h3:first-child {
+    margin-top: 0;
+}
+
 .texto-derecha {
     display: flex;
     align-items: center;
