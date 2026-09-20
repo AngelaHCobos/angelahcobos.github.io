@@ -1,0 +1,341 @@
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --color-oscuro: #32024F;
+    --color-claro: #9f14f5;
+    --transition: 0.2s;
+}
+
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    font-family: "Hepta Slab", serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--color-oscuro);
+}
+
+table {
+    width: 100%;
+    border-spacing: 5px;
+    table-layout: fixed;
+}
+
+main {
+    display: block;
+    padding: 40px 6% 0;
+    box-sizing: border-box;
+}
+
+td {
+    vertical-align: top;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.letra-oscura {
+    color: var(--color-oscuro);
+}
+
+.letra-clara {
+    color: var(--color-claro);
+}
+
+
+/* =========================
+   PORTADA (INDEX)
+========================= */
+
+.portada {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.categorias {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.categoria {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    transition: var(--transition);
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   ENCABEZADO (GATITO + AHC + NAV)
+========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+
+.logo-menu {
+    width: auto;
+    table-layout: auto;
+    border-spacing: 15px 5px;
+    margin: 20px 0 10px 0;
+}
+
+.gatito {
+    height: 45px;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+
+.gatito-derecha {
+    margin: 20px 0 10px 10px;
+}
+
+.boton-atras {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-oscuro);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.boton-atras:hover {
+    color: var(--color-claro);
+}
+
+
+/* =========================
+   BOTONES DE NAVEGACIÓN
+========================= */
+
+.nav-menu {
+    width: auto;
+    table-layout: auto;
+    border-spacing: 12px 5px;
+    margin: 20px 0 10px auto;
+}
+
+.botones a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--color-claro);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.botones a:hover {
+    background-color: var(--color-oscuro);
+    transform: translateY(-3px);
+}
+
+.botones img.boton {
+    height: 18px;
+    width: 18px;
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================
+   GALERÍA DE CADA PÁGINA
+========================= */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.tarjeta {
+    display: block;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.tarjeta:hover img {
+    opacity: 0.85;
+}
+
+.tarjeta-titulo {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* =========================
+   SOBRE MÍ (INTRO)
+========================= */
+
+.intro-sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto-sobre-mi {
+    flex: 1;
+    min-width: 280px;
+}
+
+.texto-sobre-mi h2:not(.firma),
+.texto-sobre-mi h3 {
+    font-weight: 300;
+}
+
+.foto-perfil {
+    display: block;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+.contacto-fila {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 400px;
+    margin: 20px 0 50px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.contacto-item img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.contacto-item:hover {
+    color: var(--color-claro);
+    transform: translateX(8px);
+}
+
+
+/* =========================
+   UTILIDADES
+========================= */
+
+.encabezado-pagina {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.titulo-pagina {
+    flex: 1;
+    min-width: 280px;
+    max-width: 520px;
+}
+
+.titulo-pagina h2 {
+    text-align: justify;
+}
+
+.titulo-pagina h1,
+.herramientas h3:first-child {
+    margin-top: 0;
+}
+
+.texto-derecha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.icono {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.firma {
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    color: var(--color-claro);
+}
