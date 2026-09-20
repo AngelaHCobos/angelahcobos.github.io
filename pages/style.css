@@ -239,15 +239,16 @@ td {
     min-width: 280px;
 }
 
-.texto-sobre-mi h2:not(.firma) {
-    font-weight: 400;
+.texto-sobre-mi h2:not(.firma),
+.texto-sobre-mi h3 {
+    font-weight: 300;
 }
 
 .foto-perfil {
     display: block;
     flex-shrink: 0;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 12px;
     margin: 30px 0;
