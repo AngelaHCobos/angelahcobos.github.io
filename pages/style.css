@@ -66,6 +66,24 @@ td {
     display: block;
 }
 
+.scroll-indicador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    margin-top: -60px;
+    padding: 0 6%;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.scroll-indicador img {
+    width: 1.2em;
+    height: 1.2em;
+    transform: rotate(90deg);
+}
+
 .categorias {
     width: 90%;
     max-width: 1200px;
