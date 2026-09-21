@@ -77,8 +77,9 @@ td {
 }
 
 .scroll-indicador img {
-    width: 24px;
-    height: 24px;
+    width: 1.2em;
+    height: 1.2em;
+    transform: rotate(90deg);
 }
 
 .categorias {
