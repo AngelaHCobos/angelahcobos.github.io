@@ -72,8 +72,8 @@ td {
 
 .scroll-indicador {
     position: absolute;
-    right: 3%;
-    bottom: 18%;
+    right: 3.7%;
+    bottom: 7%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -84,7 +84,7 @@ td {
 .scroll-indicador img {
     width: 1.2em;
     height: 1.2em;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
 }
 
 .categorias {
@@ -445,5 +445,84 @@ td {
 
     .categoria {
         min-height: 60px;
+    }
+}
+
+/* RESPONSIVE: PAGINAS INTERNAS */
+
+@media (max-width: 768px) {
+    .encabezado-pagina {
+        gap: 10px;
+    }
+
+    .titulo-pagina {
+        flex-basis: 100%;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .titulo-pagina h2 {
+        text-align: left;
+    }
+
+    .herramientas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 24px;
+        width: 100%;
+    }
+
+    .herramientas h3 {
+        margin: 6px 0;
+    }
+
+    .texto-derecha {
+        justify-content: flex-start;
+    }
+
+    .intro-sobre-mi {
+        gap: 10px;
+    }
+
+    .texto-sobre-mi {
+        flex-basis: 100%;
+        min-width: 0;
+    }
+
+    .foto-perfil {
+        height: auto;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        margin: 20px auto;
+    }
+
+    .contacto-fila {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria {
+        gap: 25px;
+        margin: 25px 0 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .herramientas h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-derecha {
+        min-width: 0;
+        max-width: 100%;
+        overflow-wrap: anywhere;
     }
 }
