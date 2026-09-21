@@ -74,7 +74,7 @@ td {
     position: relative;
     top: -13vw;
     padding: 20px 3% 0 6%;
-    font-size: 14px;
+    font-size: clamp(10px, 1.1vw, 14px);
     letter-spacing: 0.5px;
 }
 
@@ -109,6 +109,23 @@ td {
 
 .categoria:hover {
     transform: translateY(-5px);
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.categoria-item {
+    min-width: 0;
+}
+
+.categoria-desc {
+    margin: 8px 0 0;
+    padding: 0 5px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
@@ -162,10 +179,17 @@ td {
    BOTONES DE NAVEGACIÓN
 ========================= */
 
+.nav-menu,
+.nav-menu tbody,
+.nav-menu tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 12px;
+}
+
 .nav-menu {
     width: auto;
-    table-layout: auto;
-    border-spacing: 12px 5px;
     margin: 20px 0 10px auto;
 }
 
@@ -356,4 +380,63 @@ td {
     font-style: italic;
     text-align: center;
     color: var(--color-claro);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .logo-menu {
+        order: 0;
+    }
+
+    .gatito-derecha {
+        order: 1;
+        margin-left: 0;
+    }
+
+    .nav-menu {
+        order: 2;
+        width: 100%;
+        margin: 5px 0 10px;
+    }
+
+    .nav-menu,
+    .nav-menu tbody,
+    .nav-menu tr {
+        justify-content: center;
+    }
+
+    .botones a {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias {
+        width: 88%;
+        margin: 30px auto;
+    }
+
+    .categorias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria {
+        min-height: 60px;
+    }
 }
