@@ -72,8 +72,8 @@ td {
     justify-content: flex-end;
     gap: 10px;
     position: relative;
-    margin-top: -60px;
-    padding: 0 6%;
+    top: -13vw;
+    padding: 20px 3% 0 6%;
     font-size: 14px;
     letter-spacing: 0.5px;
 }
