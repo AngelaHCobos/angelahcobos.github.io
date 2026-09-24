@@ -32,7 +32,7 @@
         <table class="nav-menu">
             <tr>
                 <td class="botones">
-                    <a href="../index.html">
+                    <a href="../index.html" data-en="HOME">
                         INICIO
                     </a>
                 </td>
@@ -44,11 +44,11 @@
                 </td>
 
                 <td class="botones">
-                    <a href="contenido.html">CONTENIDO</a>
+                    <a href="contenido.html" data-en="CONTENT">CONTENIDO</a>
                 </td>
 
                 <td class="botones">
-                    <a href="voz.html">
+                    <a href="voz.html" data-en="VOICE">
                         VOZ
                     </a>
                 </td>
@@ -60,15 +60,19 @@
                 </td>
 
                 <td class="botones">
-                    <a href="sobre-mi.html">
+                    <a href="sobre-mi.html" data-en="ABOUT ME">
                         SOBRE MÍ
                     </a>
                 </td>
 
                 <td class="botones">
                     <a href="mailto:cobos.haydee@gmail.com">
-                        <img src="../image/email.png" alt="email" class="boton">
+                        <img src="../image/email.png" alt="email" data-alt-en="email" class="boton">
                     </a>
+                </td>
+
+                <td class="botones">
+                    <button class="lang-toggle" type="button">EN</button>
                 </td>
 
             </tr>
@@ -79,13 +83,13 @@
     <main>
         <div class="encabezado-pagina">
             <div class="titulo-pagina">
-                <h1>CONTENIDO</h1>
-                <h2>Community Management y creación de contenido digital</h2>
+                <h1 data-en="CONTENT">CONTENIDO</h1>
+                <h2 data-en="Community management and digital content creation">Community Management y creación de contenido digital</h2>
             </div>
 
             <div class="herramientas">
                 <h3 class="texto-derecha"><img src="../image/pagina-contenido/pagina-contenido-redes.png" alt=""
-                        class="icono">REDES</h3>
+                        class="icono"><span data-en="SOCIAL MEDIA">REDES</span></h3>
                 <h3 class="texto-derecha"><img src="../image/pagina-contenido/pagina-contenido-photoshop.png" alt=""
                         class="icono">PHOTOSHOP</h3>
                 <h3 class="texto-derecha"><img src="../image/pagina-contenido/pagina-contenido-canva.png" alt=""
@@ -99,28 +103,30 @@
 
         <div class="galeria">
             <a href="https://www.instagram.com/coro.nichia.gakuin/" target="_blank" class="tarjeta">
-                <img src="../image/pagina-contenido/pagina-contenido-1.webp" alt="Ver video en YouTube">
+                <img src="../image/pagina-contenido/pagina-contenido-1.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
                 <span class="tarjeta-titulo letra-oscura">
-                    Gestión de redes
+                    <span data-en="Social media management">Gestión de redes</span>
                     <p>Nichia Gakuin • Instagram</p>
                 </span>
             </a>
 
             <a href="https://www.instagram.com/ange.nyaa/" target="_blank" class="tarjeta">
-                <img src="../image/pagina-contenido/pagina-contenido-2.webp" alt="Ver video en YouTube">
+                <img src="../image/pagina-contenido/pagina-contenido-2.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
                 <span class="tarjeta-titulo letra-clara">
-                    Gestión de redes
+                    <span data-en="Social media management">Gestión de redes</span>
                     <p>An Cobos • Instagram</p>
                 </span>
             </a>
 
             <a href="https://www.instagram.com/ookami.storee/" target="_blank" class="tarjeta">
-                <img src="../image/pagina-contenido/pagina-contenido-3.webp" alt="Ver video en YouTube">
+                <img src="../image/pagina-contenido/pagina-contenido-3.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
                 <span class="tarjeta-titulo letra-oscura">
-                    Gestión de redes
+                    <span data-en="Social media management">Gestión de redes</span>
                     <p>Ookami Store • Instagram</p>
                 </span>
             </a>
         </div>
     </main>
+
+    <script src="i18n.js"></script>
 </body>

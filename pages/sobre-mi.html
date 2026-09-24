@@ -37,7 +37,7 @@
         <table class="nav-menu">
             <tr>
                 <td class="botones">
-                    <a href="../index.html">
+                    <a href="../index.html" data-en="HOME">
                         INICIO
                     </a>
                 </td>
@@ -49,11 +49,11 @@
                 </td>
 
                 <td class="botones">
-                    <a href="contenido.html">CONTENIDO</a>
+                    <a href="contenido.html" data-en="CONTENT">CONTENIDO</a>
                 </td>
 
                 <td class="botones">
-                    <a href="voz.html">
+                    <a href="voz.html" data-en="VOICE">
                         VOZ
                     </a>
                 </td>
@@ -65,15 +65,19 @@
                 </td>
 
                 <td class="botones">
-                    <a href="sobre-mi.html">
+                    <a href="sobre-mi.html" data-en="ABOUT ME">
                         SOBRE MÍ
                     </a>
                 </td>
 
                 <td class="botones">
                     <a href="mailto:cobos.haydee@gmail.com">
-                        <img src="../image/email.png" alt="email" class="boton">
+                        <img src="../image/email.png" alt="email" data-alt-en="email" class="boton">
                     </a>
+                </td>
+
+                <td class="botones">
+                    <button class="lang-toggle" type="button">EN</button>
                 </td>
 
             </tr>
@@ -83,9 +87,9 @@
     <main>
         <div class="intro-sobre-mi">
             <div class="texto-sobre-mi">
-                <h1>SOBRE MÍ</h1>
+                <h1 data-en="ABOUT ME">SOBRE MÍ</h1>
 
-                <h3> ¡Hola! Soy Angela, también conocida como An.
+                <h3 data-en="Hi! I'm Angela, also known as An. I'm a video editor and content creator, with experience in audiovisual production, social media and digital projects. I love telling stories and turning ideas into content that communicates, entertains and connects with other people. Besides editing, I also work in areas like community management, voice-over, photography and audiovisual production. This portfolio brings together some of my work, personal projects and the different tools I picked up along the way."> ¡Hola! Soy Angela, también conocida como An.
 
                     Soy editora de video y creadora de contenido, con experiencia en producción audiovisual, redes
                     sociales y
@@ -105,15 +109,15 @@
                     lo largo de mi recorrido.
                 </h3>
 
-                <h2 class="firma">Gracias por pasar ♡</h2>
+                <h2 class="firma" data-en="Thanks for stopping by ♡">Gracias por pasar ♡</h2>
             </div>
 
-            <img src="../image/pagina-sobre-mi/mi-foto.webp" alt="Foto de perfil" class="foto-perfil">
+            <img src="../image/pagina-sobre-mi/mi-foto.webp" alt="Foto de perfil" data-alt-en="Profile photo" class="foto-perfil">
         </div>
 
         <div class="contacto-fila">
             <div>
-                <h3>TAMBIÉN ME ENCONTRÁS EN</h3>
+                <h3 data-en="YOU CAN ALSO FIND ME ON">TAMBIÉN ME ENCONTRÁS EN</h3>
 
                 <div class="contacto">
                     <a href="mailto:cobos.haydee@gmail.com" class="contacto-item">
@@ -134,17 +138,19 @@
 
                     <a href="https://www.youtube.com/watch?v=Oe1D8sLLAyA" target="_blank" class="contacto-item">
                         <img src="../image/pagina-sobre-mi/youtube.png" alt="YouTube">
-                        <span>YouTube · Canal personal</span>
+                        <span data-en="YouTube · Personal channel">YouTube · Canal personal</span>
                     </a>
 
                     <a href="https://www.youtube.com/watch?v=Oe1D8sLLAyA" target="_blank" class="contacto-item">
                         <img src="../image/pagina-sobre-mi/youtube.png" alt="YouTube">
-                        <span>YouTube · Canal audiolibros</span>
+                        <span data-en="YouTube · Audiobooks channel">YouTube · Canal audiolibros</span>
                     </a>
                 </div>
             </div>
 
-            <img src="../image/pagina-sobre-mi/gatito-sobre-mi.png" alt="Gatito" class="foto-perfil">
+            <img src="../image/pagina-sobre-mi/gatito-sobre-mi.png" alt="Gatito" data-alt-en="Cat" class="foto-perfil">
         </div>
     </main>
+
+    <script src="i18n.js"></script>
 </body>

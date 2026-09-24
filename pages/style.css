@@ -526,3 +526,36 @@ td {
         overflow-wrap: anywhere;
     }
 }
+
+/* =========================
+   SELECTOR DE IDIOMA
+========================= */
+
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    background-color: var(--color-oscuro);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-toggle:hover {
+    background-color: var(--color-claro);
+    transform: translateY(-3px);
+}
+
+.lang-toggle-index {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    z-index: 2;
+}

@@ -36,7 +36,7 @@
         <table class="nav-menu">
             <tr>
                 <td class="botones">
-                    <a href="../index.html">
+                    <a href="../index.html" data-en="HOME">
                         INICIO
                     </a>
                 </td>
@@ -48,11 +48,11 @@
                 </td>
 
                 <td class="botones">
-                    <a href="contenido.html">CONTENIDO</a>
+                    <a href="contenido.html" data-en="CONTENT">CONTENIDO</a>
                 </td>
 
                 <td class="botones">
-                    <a href="voz.html">
+                    <a href="voz.html" data-en="VOICE">
                         VOZ
                     </a>
                 </td>
@@ -64,15 +64,19 @@
                 </td>
 
                 <td class="botones">
-                    <a href="sobre-mi.html">
+                    <a href="sobre-mi.html" data-en="ABOUT ME">
                         SOBRE MÍ
                     </a>
                 </td>
 
                 <td class="botones">
                     <a href="mailto:cobos.haydee@gmail.com">
-                        <img src="../image/email.png" alt="email" class="boton">
+                        <img src="../image/email.png" alt="email" data-alt-en="email" class="boton">
                     </a>
+                </td>
+
+                <td class="botones">
+                    <button class="lang-toggle" type="button">EN</button>
                 </td>
 
             </tr>
@@ -83,38 +87,40 @@
         <div class="encabezado-pagina">
             <div class="titulo-pagina">
                 <h1>MULTIMEDIA</h1>
-                <h2>Diseño grafico, escritura, web, música y proyectos personales</h2>
+                <h2 data-en="Graphic design, writing, web, music and personal projects">Diseño grafico, escritura, web, música y proyectos personales</h2>
             </div>
 
             <div class="herramientas">
                 <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-programar.png" alt="" class="icono">HMTL/CSS/JAVASCRIPT</h3>
                 <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-paint-tool-sai.png" alt="" class="icono">PAINT TOOL SAI 2</h3>
-                <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-idiomas.png" alt="" class="icono">ESPAÑOL/ENGLISH/NIHONGO</h3>
-                <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-canto.png" alt="" class="icono">CANTO</h3>
-                <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-investigacion.png" alt="" class="icono">INVESTIGACIÓN</h3>
+                <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-idiomas.png" alt="" class="icono"><span data-en="SPANISH/ENGLISH/NIHONGO">ESPAÑOL/ENGLISH/NIHONGO</span></h3>
+                <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-canto.png" alt="" class="icono"><span data-en="SINGING">CANTO</span></h3>
+                <h3 class="texto-derecha"><img src="../image/pagina%20multimedia/pagina-multimedia-investigacion.png" alt="" class="icono"><span data-en="RESEARCH">INVESTIGACIÓN</span></h3>
             </div>
         </div>
 
         <div class="galeria">
             <a href="https://www.instagram.com/coro.nichia.gakuin/" target="_blank" class="tarjeta">
-                <img src="../image/pagina%20multimedia/pagina-multimedia-1.webp" alt="Ver video en YouTube">
-                <span class="tarjeta-titulo letra-oscura">Diseño grafico</span>
+                <img src="../image/pagina%20multimedia/pagina-multimedia-1.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
+                <span class="tarjeta-titulo letra-oscura" data-en="Graphic design">Diseño grafico</span>
             </a>
 
             <a href="https://ancobos.neocities.org/elOtaku" target="_blank" class="tarjeta">
-                <img src="../image/pagina%20multimedia/pagina-multimedia-2.webp" alt="Ver video en YouTube">
-                <span class="tarjeta-titulo letra-clara">Escritura</span>
+                <img src="../image/pagina%20multimedia/pagina-multimedia-2.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
+                <span class="tarjeta-titulo letra-clara" data-en="Writing">Escritura</span>
             </a>
 
             <a href="https://ancobos.neocities.org/" target="_blank" class="tarjeta">
-                <img src="../image/pagina%20multimedia/pagina-multimedia-3.webp" alt="Ver video en YouTube">
+                <img src="../image/pagina%20multimedia/pagina-multimedia-3.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
                 <span class="tarjeta-titulo letra-oscura">Web</span>
             </a>
 
             <a href="https://www.youtube.com/@Am107-87" target="_blank" class="tarjeta">
-                <img src="../image/pagina%20multimedia/pagina-multimedia-4.webp" alt="Ver video en YouTube">
-                <span class="tarjeta-titulo letra-clara">Música</span>
+                <img src="../image/pagina%20multimedia/pagina-multimedia-4.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
+                <span class="tarjeta-titulo letra-clara" data-en="Music">Música</span>
             </a>
         </div>
     </main>
+
+    <script src="i18n.js"></script>
 </body>

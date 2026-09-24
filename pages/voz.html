@@ -36,7 +36,7 @@
         <table class="nav-menu">
             <tr>
                 <td class="botones">
-                    <a href="../index.html">
+                    <a href="../index.html" data-en="HOME">
                         INICIO
                     </a>
                 </td>
@@ -48,7 +48,7 @@
                 </td>
 
                 <td class="botones">
-                    <a href="voz.html">
+                    <a href="voz.html" data-en="VOICE">
                         VOZ
                     </a>
                 </td>
@@ -60,15 +60,19 @@
                 </td>
 
                 <td class="botones">
-                    <a href="sobre-mi.html">
+                    <a href="sobre-mi.html" data-en="ABOUT ME">
                         SOBRE MÍ
                     </a>
                 </td>
 
                 <td class="botones">
                     <a href="mailto:cobos.haydee@gmail.com">
-                        <img src="../image/email.png" alt="email" class="boton">
+                        <img src="../image/email.png" alt="email" data-alt-en="email" class="boton">
                     </a>
+                </td>
+
+                <td class="botones">
+                    <button class="lang-toggle" type="button">EN</button>
                 </td>
 
             </tr>
@@ -78,28 +82,30 @@
     <main>
         <div class="encabezado-pagina">
             <div class="titulo-pagina">
-                <h1>VOZ</h1>
-                <h2>Locución, narración, audiolibros y conducción</h2>
+                <h1 data-en="VOICE">VOZ</h1>
+                <h2 data-en="Voice-over, narration, audiobooks and hosting">Locución, narración, audiolibros y conducción</h2>
             </div>
 
             <div class="herramientas">
                 <h3 class="texto-derecha"><img src="../image/pagina-voz/pagina-voz-reaper.png" alt="" class="icono">REAPER</h3>
                 <h3 class="texto-derecha"><img src="../image/pagina-voz/pagina-voz-audacity.png" alt="" class="icono">AUDACITY</h3>
-                <h3 class="texto-derecha"><img src="../image/pagina-voz/pagina-voz-doblaje.png" alt="" class="icono">DOBLAJE</h3>
-                <h3 class="texto-derecha"><img src="../image/pagina-voz/pagina-voz-host.png" alt="" class="icono">HOST</h3>
+                <h3 class="texto-derecha"><img src="../image/pagina-voz/pagina-voz-doblaje.png" alt="" class="icono"><span data-en="DUBBING">DOBLAJE</span></h3>
+                <h3 class="texto-derecha"><img src="../image/pagina-voz/pagina-voz-host.png" alt="" class="icono"><span data-en="HOSTING">HOST</span></h3>
             </div>
         </div>
 
         <div class="galeria">
             <a href="https://www.youtube.com/watch?v=jqghiZxkF3g" target="_blank" class="tarjeta">
-                <img src="../image/pagina-voz/pagina-voz-1.webp" alt="Ver video en YouTube">
-                <span class="tarjeta-titulo letra-oscura">Locución</span>
+                <img src="../image/pagina-voz/pagina-voz-1.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
+                <span class="tarjeta-titulo letra-oscura" data-en="Voice-over">Locución</span>
             </a>
 
             <a href="https://www.youtube.com/watch?v=E7GoY6OgmGk&t=1s" target="_blank" class="tarjeta">
-                <img src="../image/pagina-voz/pagina-voz-2.webp" alt="Ver video en YouTube">
-                <span class="tarjeta-titulo letra-clara">Audiolibros</span>
+                <img src="../image/pagina-voz/pagina-voz-2.webp" alt="Ver video en YouTube" data-alt-en="See video on YouTube">
+                <span class="tarjeta-titulo letra-clara" data-en="Audiobooks">Audiolibros</span>
             </a>
         </div>
     </main>
+
+    <script src="i18n.js"></script>
 </body>

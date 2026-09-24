@@ -19,12 +19,14 @@
 <body>
 
     <!-- PORTADA -->
+    <button class="lang-toggle lang-toggle-index" type="button">EN</button>
+
     <div class="portada-contenedor">
-        <img src="image/porfolio.png" alt="Portada de mi portfolio" class="portada">
+        <img src="image/porfolio.png" alt="Portada de mi portfolio" data-alt-en="Cover of my portfolio" class="portada">
 
         <div class="scroll-indicador">
         <img src="image/pagina-index-flecha.png" alt="">
-        <span>Desliza hacia abajo</span>
+        <span data-en="Scroll down">Desliza hacia abajo</span>
     </div>
     </div>
 
@@ -34,33 +36,34 @@
             <div class="categorias-grid">
                 <div class="categoria-item">
                     <a href="pages/videos.html" class="categoria letra-oscura">VIDEO</a>
-                    <p class="categoria-desc letra-oscura">Edición para redes, YouTube y proyectos audiovisuales</p>
+                    <p class="categoria-desc letra-oscura" data-en="Editing for social media, YouTube and audiovisual projects">Edición para redes, YouTube y proyectos audiovisuales</p>
                 </div>
-            
+
                 <div class="categoria-item">
-                    <a href="pages/contenido.html" class="categoria letra-clara">CONTENIDO</a>
-                    <p class="categoria-desc letra-clara">Community Management y creación de contenido digital</p>
+                    <a href="pages/contenido.html" class="categoria letra-clara" data-en="CONTENT">CONTENIDO</a>
+                    <p class="categoria-desc letra-clara" data-en="Community management and digital content creation">Community Management y creación de contenido digital</p>
                 </div>
-            
+
                 <div class="categoria-item">
-                    <a href="pages/voz.html" class="categoria letra-oscura">VOZ</a>
-                    <p class="categoria-desc letra-oscura">Locución, narración, audiolibros y conducción</p>
+                    <a href="pages/voz.html" class="categoria letra-oscura" data-en="VOICE">VOZ</a>
+                    <p class="categoria-desc letra-oscura" data-en="Voice-over, narration, audiobooks and hosting">Locución, narración, audiolibros y conducción</p>
                 </div>
-            
+
                 <div class="categoria-item">
                     <a href="pages/multimedia.html" class="categoria letra-clara">MULTIMEDIA</a>
-                    <p class="categoria-desc letra-clara">Fotografía, escritura, web, música y proyectos personales</p>
+                    <p class="categoria-desc letra-clara" data-en="Photography, writing, web, music and personal projects">Fotografía, escritura, web, música y proyectos personales</p>
                 </div>
-            
+
                 <div class="categoria-item">
-                    <a href="pages/sobre-mi.html" class="categoria letra-oscura">SOBRE MÍ</a>
-                    <p class="categoria-desc letra-oscura">¡Contáctame!</p>
+                    <a href="pages/sobre-mi.html" class="categoria letra-oscura" data-en="ABOUT ME">SOBRE MÍ</a>
+                    <p class="categoria-desc letra-oscura" data-en="Contact me!">¡Contáctame!</p>
                 </div>
             
             </div>
 
         </section>
 
+    <script src="pages/i18n.js"></script>
 </body>
 
 </html>
